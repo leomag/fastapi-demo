@@ -77,10 +77,6 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}T
-      - name: Verify Docker login    
-        run: |
-          echo $PATH
-          echo ${{ secrets.GITHUB_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin  
       
       - name: Extract metadata (tags, labels) for Docker
         id: meta
