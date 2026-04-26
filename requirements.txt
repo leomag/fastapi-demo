@@ -1,0 +1,8 @@
+fastapi==0.125.0
+uvicorn==0.38.0
+pydantic==2.12.5
+sqlalchemy==2.0.45
+pytest==8.3.4
+httpx==0.28.1
+aiohttp===3.13.5
+flake8-fastapi==0.7.0
