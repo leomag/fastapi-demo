@@ -97,5 +97,52 @@ jobs:
         with:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}.${{ github.sha }}
           subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true    
+          push-to-registry: true
+              
+  release:
+    name: Create Release
+    needs: [lint, build]
+    if: |
+      github.ref == 'refs/heads/main' &&
+      !contains(github.event.head_commit.message, '[skip ci]') &&
+      !contains(github.event.head_commit.message, 'chore(release)') &&
+      github.actor != 'github-actions[bot]' &&
+      github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    concurrency: release
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+
+      - name: Force correct release branch
+        run: |
+          git checkout -B ${{ github.ref_name }} ${{ github.sha }}
+
+      - name: Python Semantic Release
+        id: release
+        uses: python-semantic-release/python-semantic-release@v9.12.0
+        with:
+          github_token: ${{ secrets.CR_PAT }}
+          git_committer_name: "github-actions"
+          git_committer_email: "actions@users.noreply.github.com"
+
+      - name: Display Release Information
+        if: steps.release.outputs.released == 'true'
+        run: |
+          echo "Version released: ${{ steps.release.outputs.version }}"
+          echo "Tag created: ${{ steps.release.outputs.tag }}"
+
+      - name: Publish to GitHub Release Assets
+        uses: python-semantic-release/publish-action@v9.8.9
+        if: steps.release.outputs.released == 'true'
+        with:
+          github_token: ${{ secrets.CR_PAT }}
+          tag: ${{ steps.release.outputs.tag }}          
 
