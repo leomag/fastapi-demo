@@ -1,6 +1,11 @@
+[![CI workflow](https://img.shields.io/github/actions/workflow/status/leomag/fastapi-demo/main.yml?branch=main&label=ci&logo=github&style=flat-square)](https://github.com/leomag/fastapi-demo/actions?workflow=main)
+
+
 ## 📌 FastAPI Demo — демонстрационное backend-приложение
 
 **FastAPI Demo** — это пример backend-сервиса, реализованного на базе фреймворка FastAPI. Проект демонстрирует базовую архитектуру REST API, работу с базой данных и применение асинхронного подхода в Python.
+
+![Screenshot](.github/fastapi-demo.png)
 
 ---
 
@@ -59,3 +64,31 @@
 - Служить отправной точкой для разработки production-ready сервисов  
 
 ---
+
+## ⚙️ Запуск проекта
+
+### 🔹 Локальный запуск через Docker
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/leomag/fastapi-demo.git
+cd fastapi-demo
+```
+
+2. Соберите docker-образ, запустите его в контейнере:
+```bash
+docker build -t fastapi-demo .
+docker run -d -p 8000:8000 fastapi-demo
+```
+3. Запустить сразу в контейнере (опционально):
+```bash
+
+```
+Приложение будет доступно по адресу:
+http://localhost:8000
+
+Swagger-документация:
+http://localhost:8000/docs
+
+Redoс-документация:
+http://localhost:8000/redoc
