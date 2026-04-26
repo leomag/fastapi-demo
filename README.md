@@ -12,11 +12,10 @@
 ## 🚀 Основные возможности
 
 - Реализация REST API с CRUD-операциями  
-- Асинхронное взаимодействие с базой данных  
+- Асинхронное взаимодействие с API https://github.com/fawazahmed0/exchange-api/
 - Работа с SQLite
 - Валидация данных с использованием Pydantic  
 - Автоматическая генерация документации (Swagger/Redoc)   
-- Интеграция со сторонним API https://github.com/fawazahmed0/exchange-api/
 
 ---
 
