@@ -1,4 +1,4 @@
-[![CI workflow](https://github.com/leomag/fastapi-demo/actions/workflows/main.yml/badge.svgs)](https://github.com/leomag/fastapi-demo/actions/workflows/main.yml)
+[![CI workflow](https://github.com/leomag/fastapi-demo/actions/workflows/main.yml/badge.svg)](https://github.com/leomag/fastapi-demo/actions/workflows/main.yml)
 
 
 ## 📌 FastAPI Demo — демонстрационное backend-приложение
