@@ -9,6 +9,12 @@ on:
       - main
       - feature/*
     types: [opened, synchronize, reopened, closed]   
+  
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (tag)"
+        required: true  
 
 env:
   REGISTRY: ghcr.io
@@ -146,3 +152,17 @@ jobs:
           github_token: ${{ secrets.CR_PAT }}
           tag: ${{ steps.release.outputs.tag }}          
 
+  deploy:
+    name: Deploy to Render
+    needs: [release]   
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.inputs.version }}
+
+    - name: Trigger Render deploy
+      run: |
+        curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          
