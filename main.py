@@ -6,7 +6,7 @@ from app.api.v1.wallets import router as wallets_router
 from app.database import Base, engine
 
 app = FastAPI()
-router = APIRouter(prefix="/api/v1")
+router = APIRouter(prefix="/api/v2")
 
 app.include_router(wallets_router, tags=["wallets"])
 app.include_router(operations_router, tags=["operations"])
