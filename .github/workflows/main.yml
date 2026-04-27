@@ -10,11 +10,9 @@ on:
       - feature/*
     types: [opened, synchronize, reopened, closed]   
   
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Release version (tag)"
-        required: true  
+  release:
+    types: [published]  
+  
 
 env:
   REGISTRY: ghcr.io
@@ -153,16 +151,12 @@ jobs:
           tag: ${{ steps.release.outputs.tag }}          
 
   deploy:
-    name: Deploy to Render
-    needs: [release]   
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        ref: ${{ github.event.inputs.version }}
 
-    - name: Trigger Render deploy
-      run: |
-        curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+    steps:
+      - name: Deploy to Render
+        uses: JorgeLNJunior/render-deploy@v1
+        with:
+          service_id: ${{ secrets.RENDER_SERVICE_ID }}
+          api_key: ${{ secrets.RENDER_API_KEY }}
           
