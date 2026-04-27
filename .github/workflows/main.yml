@@ -8,10 +8,7 @@ on:
     branches: 
       - main
       - feature/*
-    types: [opened, synchronize, reopened, closed]   
-  
-  release:
-    types: [published]  
+    types: [opened, synchronize, reopened, closed] 
   
 
 env:
@@ -148,15 +145,4 @@ jobs:
         if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.CR_PAT }}
-          tag: ${{ steps.release.outputs.tag }}          
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to Render
-        uses: JorgeLNJunior/render-deploy@v1
-        with:
-          service_id: ${{ secrets.RENDER_SERVICE_ID }}
-          api_key: ${{ secrets.RENDER_API_KEY }}
-          
+          tag: ${{ steps.release.outputs.tag }}
