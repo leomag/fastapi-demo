@@ -1,6 +1,33 @@
 # CHANGELOG
 
 
+## v0.2.0 (2026-04-27)
+
+### Continuous Integration
+
+* ci: add 'needs" in job test ([`b8fd9d6`](https://github.com/leomag/fastapi-demo/commit/b8fd9d673ecfe70026d7204e6bf7784b65cfa0ab))
+
+* ci: fix ci ([`37057df`](https://github.com/leomag/fastapi-demo/commit/37057dfdf39744a6bfe9503dd066c37a6a0ebd6a))
+
+### Documentation
+
+* docs: fix readme ([`17f07ea`](https://github.com/leomag/fastapi-demo/commit/17f07ea0454ef5feaa3baaca1708797aa5a36448))
+
+* docs: update readme ([`7589e6e`](https://github.com/leomag/fastapi-demo/commit/7589e6e00af432649d6a9d16782129e13620ea4e))
+
+### Features
+
+* feat: add service define language ([`f63326b`](https://github.com/leomag/fastapi-demo/commit/f63326bc81429dcd516f98bcdd31a9f7a95a3574))
+
+### Unknown
+
+* Merge pull request #2 from leomag/feature/predict
+
+feat: add service define language ([`b852b4e`](https://github.com/leomag/fastapi-demo/commit/b852b4ebec60bfd7683ef1d0ddccf55ea53e71d5))
+
+* image: update image ([`e20a62f`](https://github.com/leomag/fastapi-demo/commit/e20a62f605a33dddbf3e9b768ee3b71d2e28fda6))
+
+
 ## v0.1.0 (2026-04-27)
 
 ### Continuous Integration
