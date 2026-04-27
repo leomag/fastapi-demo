@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v0.1.0 (2026-04-27)
+
+### Continuous Integration
+
+* ci: fix ci ([`1fe982f`](https://github.com/leomag/fastapi-demo/commit/1fe982fd3b859abba08286e3cd15f1a925a72200))
+
+* ci: update ci ([`7ce08ee`](https://github.com/leomag/fastapi-demo/commit/7ce08eefe66d27cdad7499b8daba440753925839))
+
+### Features
+
+* feat: add api v2 ([`19d0438`](https://github.com/leomag/fastapi-demo/commit/19d04385e8f161a8d068261e3cbb8fa7b16e5ff9))
+
+### Unknown
+
+* Merge pull request #1 from leomag/feature/v2
+
+feat: add api v2 ([`4a6122f`](https://github.com/leomag/fastapi-demo/commit/4a6122fb9edb1d1c41585162a41eba3beff8cb74))
+
+* Merge remote-tracking branch 'origin/main' ([`e4593e3`](https://github.com/leomag/fastapi-demo/commit/e4593e34fe175877004dfd0a1ce03f83621a6f6f))
+
+
 ## v0.0.1 (2026-04-26)
 
 ### Bug Fixes
@@ -18,6 +39,8 @@
 * fix: update dependency in requirements.txt ([`be9eb39`](https://github.com/leomag/fastapi-demo/commit/be9eb390a67204d2bdfa32eadc53ae57ab005fa0))
 
 ### Continuous Integration
+
+* ci: add job deploy ([`4306872`](https://github.com/leomag/fastapi-demo/commit/43068727dcdca4cf63cf237c6279453d51c4f584))
 
 * ci: add release job ([`206c909`](https://github.com/leomag/fastapi-demo/commit/206c909f93464c6529b67b76dbd91eeeebc08d71))
 
