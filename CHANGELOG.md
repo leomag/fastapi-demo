@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.2.1 (2026-04-27)
+
+### Bug Fixes
+
+* fix: fix routing ([`2fd7c76`](https://github.com/leomag/fastapi-demo/commit/2fd7c762ac955ef45b30909358610a5764897365))
+
+### Documentation
+
+* docs: update readme ([`9eda164`](https://github.com/leomag/fastapi-demo/commit/9eda16424477b1c9ac893ec1c3463c7e16ac7430))
+
+
 ## v0.2.0 (2026-04-27)
 
 ### Continuous Integration
