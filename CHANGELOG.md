@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v0.2.2 (2026-04-28)
+
+### Bug Fixes
+
+* fix: fix routing predict service ([`512800c`](https://github.com/leomag/fastapi-demo/commit/512800c3ad1a7c86e74503666e3baa02f86ccf63))
+
+
 ## v0.2.1 (2026-04-27)
 
 ### Bug Fixes
