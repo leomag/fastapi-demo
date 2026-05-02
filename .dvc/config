@@ -1,0 +1,4 @@
+[core]
+    remote = yandex_disk1
+['remote "yandex_disk1"']
+    url = yadisk://fastapi-demo

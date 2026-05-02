@@ -1,16 +1,13 @@
 import pickle
 import re
 from pathlib import Path
+import dvc.api
+import joblib
 
 from app.schemas import PredictionResponse
 
-__version__ = "0.1.0"
-
-BASE_DIR = Path(__file__).resolve(strict=True).parent
-
-
-with open(f"{BASE_DIR}/trained_pipeline-{__version__}.pkl", "rb") as f:
-    model = pickle.load(f)
+model_path = 'models/trained_pipeline-0.1.0.pkl'
+model = joblib.load(model_path)
 
 classes = [
     "Arabic",
