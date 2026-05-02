@@ -1,9 +1,9 @@
 from fastapi import APIRouter, FastAPI
 
 from app.api.v2.operations import router as operations_router
+from app.api.v2.predict import router as predict_router
 from app.api.v2.users import router as users_router
 from app.api.v2.wallets import router as wallets_router
-from app.api.v2.predict import router as predict_router
 from app.database import Base, engine
 
 app = FastAPI()

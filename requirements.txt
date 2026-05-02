@@ -10,5 +10,4 @@ flake8
 isort
 black
 dvc
-dvc-gdrive
 dvc-yadisk

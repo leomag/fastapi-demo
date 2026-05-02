@@ -1,12 +1,10 @@
-import pickle
 import re
-from pathlib import Path
-import dvc.api
+
 import joblib
 
 from app.schemas import PredictionResponse
 
-model_path = 'models/trained_pipeline-0.1.0.pkl'
+model_path = "models/trained_pipeline-0.1.0.pkl"
 model = joblib.load(model_path)
 
 classes = [
