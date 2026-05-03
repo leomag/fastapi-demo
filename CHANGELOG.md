@@ -1,11 +1,38 @@
 # CHANGELOG
 
 
+## v0.3.0 (2026-05-02)
+
+### Bug Fixes
+
+* fix: bugfix linters ([`87634a2`](https://github.com/leomag/fastapi-demo/commit/87634a2a93ef4c3553e762ec08b520d26d02d7a2))
+
+* fix: update fix file ([`66f6caf`](https://github.com/leomag/fastapi-demo/commit/66f6caff8a54efd96ff7e96cfe500f5cf78f80a1))
+
+### Documentation
+
+* docs: update changelog ([`b22582f`](https://github.com/leomag/fastapi-demo/commit/b22582f61fca40a75dafef37f52e11b017b644be))
+
+### Features
+
+* feat: add dvc ([`da25d23`](https://github.com/leomag/fastapi-demo/commit/da25d23a26e53d6d2f8ffe849fc6c8a240561b48))
+
+### Testing
+
+* test: remove test service language ([`a8bb18e`](https://github.com/leomag/fastapi-demo/commit/a8bb18ea5a5dcd6b1161f2e770fb9cf3f0ed2c07))
+
+* test: skip one test ([`0c99578`](https://github.com/leomag/fastapi-demo/commit/0c99578bb3ff177d54769e9c8f58b4fa023ef93d))
+
+
 ## v0.2.2 (2026-04-28)
 
 ### Bug Fixes
 
 * fix: fix routing predict service ([`512800c`](https://github.com/leomag/fastapi-demo/commit/512800c3ad1a7c86e74503666e3baa02f86ccf63))
+
+### Unknown
+
+* image: update swagger UI ([`2e515eb`](https://github.com/leomag/fastapi-demo/commit/2e515eb6ed57598207f6b1a88582aa41aecdbfdd))
 
 
 ## v0.2.1 (2026-04-27)
