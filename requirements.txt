@@ -1,5 +1,6 @@
 fastapi
 scikit-learn
+seaborn
 uvicorn
 pydantic
 sqlalchemy

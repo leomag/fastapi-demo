@@ -71,7 +71,8 @@
 ## DVC
 - Для нормальной работы с DVC нужно использовать платное S3
 - Плагин [dvc-yadisk](https://pypi.org/project/dvc-yadisk/) является сторонним и не поддерживается официально командой DVC, в отличие от настройки через S3 (Yandex Cloud), которая работает стабильнее
-- Поэтому прикладываю ссылку на [модель](https://drive.google.com/drive/folders/1dk7PHTnqFChWLFuQDY90mKPbB97bAWT4?usp=share_link), которую нужно скачать и положить в директорию 'models/' внутри проекта
+- Cсылка на [модель](https://drive.google.com/drive/folders/1dk7PHTnqFChWLFuQDY90mKPbB97bAWT4?usp=share_link), которую нужно скачать и положить в директорию 'models/' внутри проекта
+- Также модель можно получить из [notebook](notebooks/LanguageDetection.ipynb)
 
 ## ⚙️ Запуск проекта
 
